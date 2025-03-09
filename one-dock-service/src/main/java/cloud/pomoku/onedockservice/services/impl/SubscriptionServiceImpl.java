@@ -54,6 +54,7 @@ public class SubscriptionServiceImpl implements SubscriptionService {
     }
 
     @Override
+    @Transactional
     public SubscriptionResponse updateSubscription(Long id, UpdateSubscriptionRequest request) {
         Subscription subscription = subscriptionRepository.findById(id)
                 .orElseThrow(() -> new SubscriptionNotFound(id));
@@ -71,6 +72,7 @@ public class SubscriptionServiceImpl implements SubscriptionService {
     }
 
     @Override
+    @Transactional
     public void deleteSubscription(Long id) {
         if(!subscriptionRepository.existsById(id)) throw new SubscriptionNotFound(id);
         subscriptionRepository.deleteById(id);

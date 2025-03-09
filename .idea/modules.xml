@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Pomoku Cloud.iml" filepath="$PROJECT_DIR$/Pomoku Cloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/one-dock-service/one-dock-service.iml" filepath="$PROJECT_DIR$/one-dock-service/one-dock-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web/web.iml" filepath="$PROJECT_DIR$/web/web.iml" />
+    </modules>
+  </component>
+</project>

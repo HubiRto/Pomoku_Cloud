@@ -1,7 +1,7 @@
-package cloud.pomoku.onedockservice.handlers;
+package cloud.pomoku.fileservice.handlers;
 
-import cloud.pomoku.onedockservice.dto.responses.ErrorResponse;
-import cloud.pomoku.onedockservice.exception.AppException;
+import cloud.pomoku.fileservice.dto.responses.ErrorResponse;
+import cloud.pomoku.fileservice.exceptions.AppException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;

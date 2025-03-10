@@ -1,0 +1,42 @@
+spring:
+  application:
+    name: file-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/db
+    username: user
+    password: password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+        jdbc:
+          lob:
+            non_contextual_creation: true
+    open-in-view: true
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+      enabled: true
+      file-size-threshold: 2KB
+logging:
+  level:
+    root: info
+server:
+  port: 8082
+file:
+  storage:
+    location: ./uploads
+    hash-sections: 3
+    section-size: 2
+    allowed-types:
+      - image/jpeg
+      - image/png
+    allowed-extensions:
+      - jpg
+      - png
+  base-url: http://localhost:${server.port}/api/v1/files

@@ -1,4 +1,4 @@
-package cloud.pomoku.onedockservice.dto.responses;
+package cloud.pomoku.fileservice.dto.responses;
 
 import java.time.LocalDateTime;
 import java.util.HashMap;
